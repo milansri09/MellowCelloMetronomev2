@@ -1,0 +1,118 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 350px solid orange;
+  border-left: 175px solid transparent;
+  border-right: 175px solid transparent;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.indicatorContainer {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%)
+}
+
+.allIndicators {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 150px;
+}
+
+.indicatorBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: lightblue;
+    margin: 3px;
+}
+
+.triangleInner {
+  width: 0;
+  height: 0;
+  border-bottom: 300px solid black;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 33px)
+}
+
+.relative {
+  position: relative;
+}
+
+.bpmText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 160px);
+  width: 130px;
+  height: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.slider {
+    text-align: center;
+    width: 350px;
+    margin-top: 10px;
+    accent-color: white;
+}
+
+.slider::-webkit-slider-runnable-track {
+    
+}
+
+.numberBeats {
+    width: 110px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.text {
+    color: white;
+    font-size: 30px;
+}
+
+.metronomeMode {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%)
+
+}
+
+.newMode {
+    margin: 10px;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.title {
+    color: cornflowerblue;
+    font-size: 18px;
+    text-align: center;
+}
+
+.indicatorX {
+    font-size: 30px;
+}

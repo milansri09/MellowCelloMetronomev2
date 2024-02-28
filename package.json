@@ -1,0 +1,22 @@
+{
+  "name": "mellowcellometronomev2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milansri09/MellowCelloMetronomev2.git"
+  },
+  "author": "Milan Sridhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milansri09/MellowCelloMetronomev2/issues"
+  },
+  "homepage": "https://github.com/milansri09/MellowCelloMetronomev2#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
