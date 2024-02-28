@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link
+    rel="stylesheet"
+    href="style.css"/>
+</head>
+
+<body>
+    <div class="title">
+        <h1>
+            Mr. Mellow Cello's Marvelous Musical Metronome
+        </h1>
+    </div>
+    <div class="container">
+        <div class="triangle" id="triangle">
+            <div class="relative">
+                <div class="triangleInner" id="click">
+                    <div class="relative">
+                        <input class="bpmText" id="tempo" type="number" value="70" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <input class="slider" id="slide"
+                   type="range"
+                   min="10"
+                   max="300"
+                   value="70" />
+        </div>
+        <div>
+            <span class="text">Number of Beats: </span>
+            <input type="number" id="numberBeats"
+                   value="4"
+                   class="numberBeats" />
+        </div>
+        <div>
+            <span class="text">Beat: </span>
+            <select class="numberBeats" id="numberBeatSelector">
+                <option value="1">
+                    Beat 1
+                </option>
+                <option value="2">
+                    Beat 2
+                </option>
+                <option value="3">
+                    Beat 3
+                </option>
+                <option value="4">
+                    Beat 4
+                </option>
+            </select>
+            <span class="text">Emphasis: </span>
+            <input type="checkbox" id="isEmphasized" checked />
+            <span class="text">Skip: </span>
+            <input type="checkbox" id="isSkipped" />
+        </div>
+        <div>
+            <span class="text">Emphasized Beat Color: </span>
+            <input type="color" id="emphasizedColor" value="#ff0000" />
+        </div>
+        <div>
+            <span class="text">Unemphasized Beat Color: </span>
+            <input type="color" id="unemphasizedColor" value="#add8e6" />
+        </div>
+    </div>
+
+    <div class="indicatorContainer">
+        <div class="allIndicators" id="allIndicators">
+            <div class="indicatorBox">
+
+            </div>
+            <div class="indicatorBox">
+
+            </div>
+            <div class="indicatorBox">
+
+            </div>
+            <div class="indicatorBox">
+
+            </div>
+            <div class="indicatorBox">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="metronomeMode">
+        <button class="newMode" style="background-color: orange" id="manualMode">
+            Manual
+        </button>
+        <button class="newMode" id="tappedMode" style="background-color: white">
+            Tapped
+        </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
